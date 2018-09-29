@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="navimumbai.sportobuddycricketclub.com.sportobuddycricketclub.ActivityMainWebview">
+
+    <sat.heady.com.nytimes.view.CustomWebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></sat.heady.com.nytimes.view.CustomWebView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/noDataRL"
+        android:background="#f7f7f7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RETRY!"
+            android:id="@+id/retry"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mProgressBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
